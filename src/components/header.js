@@ -27,6 +27,9 @@ const Header = () => {
     return (
         <AppBar position="static">
             <Toolbar>
+                <strong>
+                    <div>LazyRay</div>
+                </strong>
                 <List component="nav" aria-labelledby="main navigation" className={classes.navDisplayFlex}>
                     {navLinks.map(
                         ({title, path}) => (
