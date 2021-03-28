@@ -1,1 +1,1 @@
-
+import './static/style.css';
