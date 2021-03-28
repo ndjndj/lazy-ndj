@@ -1,5 +1,19 @@
 import React from 'react';
-import { AppBar, Toolbar, List, ListItem, ListItemText } from '@material-ui/core';
+import { makeStyles, AppBar, Toolbar, List, ListItem, ListItemText } from '@material-ui/core';
+
+const useStyles = makeStyles(
+    {
+        navDisplayFlex: {
+            display: `flex`,
+            justifyContent: `space-between`,
+        },
+        linkText: {
+            textDecoration: `none`,
+            textTransform: `uppercase`,
+            color: `white`,
+        }
+    }
+);
 
 const navLinks = [
     {title: 'blog', path: '/blog'},
@@ -9,6 +23,7 @@ const navLinks = [
 ];
 
 const Header = () => {
+    const classes = useStyles();
     return (
         <AppBar position="static">
             <Toolbar>
