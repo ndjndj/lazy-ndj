@@ -27,10 +27,10 @@ const Header = () => {
     return (
         <AppBar position="static">
             <Toolbar>
-                <List component="nav" aria-labelledby="main navigation">
+                <List component="nav" aria-labelledby="main navigation" className={classes.navDisplayFlex}>
                     {navLinks.map(
                         ({title, path}) => (
-                            <a href={path} key={title}>
+                            <a href={path} key={title} className={classes.linkText}>
                                 <ListItem button>
                                     <ListItemText primary={title} />
                                 </ListItem>
