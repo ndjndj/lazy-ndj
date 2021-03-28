@@ -1,5 +1,6 @@
 import React from 'react';
 import { makeStyles, AppBar, Toolbar, List, ListItem, ListItemText } from '@material-ui/core';
+import IconRay from '../assets/ray-32.svg';
 
 const useStyles = makeStyles(
     {
@@ -30,6 +31,7 @@ const Header = () => {
                 <strong>
                     <div>LazyRay</div>
                 </strong>
+                <IconRay />
                 <List component="nav" aria-labelledby="main navigation" className={classes.navDisplayFlex}>
                     {navLinks.map(
                         ({title, path}) => (
