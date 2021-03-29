@@ -43,7 +43,7 @@ const Header = () => {
                 <Container className={classes.navDisplayFlex}>
                     <IconButton edge="start" color="inherit" aria-label="home">
                         <IconRay />
-                        <Typography variant="h6" className={classes.title}>LazyRay</Typography>
+                        <Typography variant="h6">lazyRay</Typography>
                     </IconButton>
 
                     <List component="nav" aria-labelledby="main navigation" className={classes.navList}>
