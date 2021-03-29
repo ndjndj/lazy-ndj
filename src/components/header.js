@@ -1,5 +1,5 @@
 import React from 'react';
-import { makeStyles, AppBar, Toolbar, List, ListItem, ListItemText, Container, IconButton } from '@material-ui/core';
+import { makeStyles, AppBar, Toolbar, List, ListItem, ListItemText, Container, IconButton, Typography } from '@material-ui/core';
 import IconRay from '../assets/ray-48.svg';
 import { Home } from '@material-ui/icons';
 
@@ -13,7 +13,7 @@ const useStyles = makeStyles(
             textDecoration: `none`,
             textTransform: `uppercase`,
             color: `white`,
-        }
+        },
     }
 );
 
@@ -30,10 +30,11 @@ const Header = () => {
         <AppBar position="static">
             <Toolbar>
                 <Container className={classes.navDisplayFlex}>
-
                     <IconButton edge="start" color="inherit" aria-label="home">
                         <IconRay />
+                        <Typography variant="h5" className={classes.title}>LazyRay</Typography>
                     </IconButton>
+
                     <List component="nav" aria-labelledby="main navigation" className={classes.navDisplayFlex}>
                         {navLinks.map(
                             ({title, path}) => (
