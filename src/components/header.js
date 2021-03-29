@@ -1,6 +1,7 @@
 import React from 'react';
-import { makeStyles, AppBar, Toolbar, List, ListItem, ListItemText, Container } from '@material-ui/core';
-import IconRay from '../assets/ray-32.svg';
+import { makeStyles, AppBar, Toolbar, List, ListItem, ListItemText, Container, IconButton } from '@material-ui/core';
+import IconRay from '../assets/ray-48.svg';
+import { Home } from '@material-ui/icons';
 
 const useStyles = makeStyles(
     {
@@ -29,12 +30,10 @@ const Header = () => {
         <AppBar position="static">
             <Toolbar>
                 <Container className={classes.navDisplayFlex}>
-                    <div>
-                        <strong>
-                            <div>LazyRay</div>
-                        </strong>
+
+                    <IconButton edge="start" color="inherit" aria-label="home">
                         <IconRay />
-                    </div>
+                    </IconButton>
                     <List component="nav" aria-labelledby="main navigation" className={classes.navDisplayFlex}>
                         {navLinks.map(
                             ({title, path}) => (
