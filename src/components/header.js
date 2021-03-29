@@ -9,10 +9,16 @@ const useStyles = makeStyles(
             display: `flex`,
             justifyContent: `space-between`,
         },
+        navList: {
+            display: `flex`,
+            justifyContent: `flex-end`,
+        },
         linkText: {
             textDecoration: `none`,
             textTransform: `uppercase`,
             color: `white`,
+            display: `flex`,
+            alignItems: `center`,
         },
     }
 );
@@ -35,7 +41,7 @@ const Header = () => {
                         <Typography variant="h5" className={classes.title}>LazyRay</Typography>
                     </IconButton>
 
-                    <List component="nav" aria-labelledby="main navigation" className={classes.navDisplayFlex}>
+                    <List component="nav" aria-labelledby="main navigation" className={classes.navList}>
                         {navLinks.map(
                             ({title, path}) => (
                                 <a href={path} key={title} className={classes.linkText}>
