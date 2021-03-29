@@ -23,7 +23,7 @@ const useStyles = makeStyles(
             alignItems: `center`,
         },
         toolbar: {
-            minHeight: `40px`,
+            minHeight: `36px`,
         }
     }
 );
