@@ -6,5 +6,17 @@
 
 module.exports = {
   /* Your site config here */
-  plugins: [`gatsby-plugin-material-ui`],
+  plugins: [
+    {
+      resolve: `gatsby-plugin-material-ui`
+    },
+    {
+      resolve: 'gatsby-plugin-react-svg',
+      options: {
+        rule: {
+          include: /assets/,
+        }
+      }
+    }
+  ],
 }
