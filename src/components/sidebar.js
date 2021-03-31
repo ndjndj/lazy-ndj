@@ -39,7 +39,7 @@ const Sidebar = (props) => {
         <Link display="block" variant="body1" href="#">
           <Grid container direction="row" spacing={1} alignItems="center">
             <Grid item>
-              <network.icon />
+              
             </Grid>
             <Grid item>name</Grid>
           </Grid>
