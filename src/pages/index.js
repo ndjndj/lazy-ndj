@@ -1,18 +1,19 @@
 import React from "react"
-import Header from '../components/header';
-import Blog from '../components/blog';
-import FeatuerdCard from '../components/featuredCard';
-import FeaturedCardParts from '../components/featuredCardParts';
-import Sidebar from '../components/sidebar';
+import About from '../pages/about';
+import Blog from '../pages/blog';
+import Contact from '../pages/contact';
+import Products from '../pages/products';
+import { Router } from '@reach/router';
+
 
 export default function Home() {
   return (
-    <React.Fragment>
-      <Header />
-      <FeatuerdCard />
-      <FeaturedCardParts />
-      <FeaturedCardParts />
-      <Sidebar />
-    </React.Fragment>
+    <Router>
+      <About path="/about" />
+      <Blog path="/blog" />
+      <Contact path="/contact" />
+      <Products path="/products" />
+      <About path="/" />
+    </Router>
   );
 }

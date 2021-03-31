@@ -1,7 +1,8 @@
 import React from 'react';
 import { makeStyles, AppBar, Toolbar, List, ListItem, ListItemText, Container, IconButton, Typography } from '@material-ui/core';
+import { Router, Link } from '@reach/router';
 import IconRay from '../assets/ray-32.svg';
-import { Home } from '@material-ui/icons';
+
 
 const useStyles = makeStyles(
     {
@@ -49,11 +50,11 @@ const Header = () => {
                     <List component="nav" aria-labelledby="main navigation" className={classes.navList}>
                         {navLinks.map(
                             ({title, path}) => (
-                                <a href={path} key={title} className={classes.linkText}>
+                                <Link to={path} key={title} className={classes.linkText}>
                                     <ListItem button>
                                         <ListItemText primary={title} />
                                     </ListItem>
-                                </a>
+                                </Link>
                             )
                         )}
                     </List>
