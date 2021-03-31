@@ -10,7 +10,7 @@ export default function Home() {
       <Header />
       <FeatuerdCard />
       <FeaturedCardParts />
-      <Blog />
+      <FeaturedCardParts />
     </React.Fragment>
   );
 }
