@@ -14,9 +14,10 @@ const useStyles = makeStyles(
     })
 );
 
-const Blog = () => {
+const Blog = (props) => {
     const classes = useStyles();
-
+    const { posts, title} = props;
+    
     return (
         <Grid item xs={12} md={8}>
             <Typography variant="h6" gutterBottom>
@@ -31,7 +32,7 @@ const Blog = () => {
     );
 }
 
-Blog.PropTypes = {
+Blog.propTypes = {
     posts: PropTypes.array,
     title: PropTypes.string,
 }
