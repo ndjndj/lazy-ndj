@@ -27,7 +27,7 @@ const Blog = () => {
     </Grid>
 }
 
-Main.PropTypes = {
+Blog.PropTypes = {
     posts: PropTypes.array,
     title: PropTypes.string,
 }
