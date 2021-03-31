@@ -15,16 +15,20 @@ const useStyles = makeStyles(
 );
 
 const Blog = () => {
-    <Grid item xs={12} md={8}>
-        <Typography variant="h6" gutterBottom>
-            Title
-        </Typography>
-        <Divider />
-        <p>posts</p>
-        <p>posts</p>
-        <p>posts</p>
-        <p>posts</p>
-    </Grid>
+    const classes = useStyles();
+
+    return (
+        <Grid item xs={12} md={8}>
+            <Typography variant="h6" gutterBottom>
+                Title
+            </Typography>
+            <Divider />
+            <p>posts</p>
+            <p>posts</p>
+            <p>posts</p>
+            <p>posts</p>
+        </Grid>
+    );
 }
 
 Blog.PropTypes = {
