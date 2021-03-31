@@ -13,6 +13,7 @@ export default function Home() {
       <Blog path="/blog" />
       <Contact path="/contact" />
       <Products path="/products" />
+      <About path="/" />
     </Router>
   );
 }
