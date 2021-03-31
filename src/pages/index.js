@@ -9,8 +9,10 @@ import { Router } from '@reach/router';
 export default function Home() {
   return (
     <Router>
-
-
+      <About path="/about" />
+      <Blog path="/blog" />
+      <Contact path="/contact" />
+      <Products path="/products" />
     </Router>
   );
 }
