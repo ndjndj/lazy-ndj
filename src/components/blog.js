@@ -14,7 +14,7 @@ const useStyles = makeStyles(
     })
 );
 
-const Main = () => {
+const Blog = () => {
     <Grid item xs={12} md={8}>
         <Typography variant="h6" gutterBottom>
             Title
@@ -32,4 +32,4 @@ Main.PropTypes = {
     title: PropTypes.string,
 }
 
-export default Main;
+export default Blog;
