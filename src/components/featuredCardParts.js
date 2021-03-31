@@ -58,4 +58,4 @@ FeaturedCardParts.propTypes = {
   post: PropTypes.object,
 };
 
-export default FeatuerdCardParts;
+export default FeaturedCardParts;
