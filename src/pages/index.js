@@ -3,6 +3,7 @@ import Header from '../components/header';
 import Blog from '../components/blog';
 import FeatuerdCard from '../components/featuredCard';
 import FeaturedCardParts from '../components/featuredCardParts';
+import Sidebar from '../components/sidebar';
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <FeatuerdCard />
       <FeaturedCardParts />
       <FeaturedCardParts />
+      <Sidebar />
     </React.Fragment>
   );
 }
