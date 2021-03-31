@@ -66,4 +66,6 @@ const FeatuerdCard = (props) => {
 
 FeatuerdCard.propTypes = {
     post: PropTypes.object,
-  };
+};
+
+export default FeatuerdCard;
