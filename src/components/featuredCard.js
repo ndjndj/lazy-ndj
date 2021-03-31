@@ -36,3 +36,11 @@ const useStyles = makeStyles(
           },
     })
 );
+
+const FeatuerdCard = () => {
+
+}
+
+FeatuerdCard.propTypes = {
+    post: PropTypes.object,
+  };
