@@ -21,7 +21,7 @@ const useStyles = makeStyles({
   },
 });
 
-export default function FeaturedPost(props) {
+const FeaturedCardParts = (props) => {
   const classes = useStyles();
   const { post } = props;
 
@@ -32,13 +32,13 @@ export default function FeaturedPost(props) {
           <div className={classes.cardDetails}>
             <CardContent>
               <Typography component="h2" variant="h5">
-                {post.title}
+                title
               </Typography>
               <Typography variant="subtitle1" color="textSecondary">
-                {post.date}
+                2021/03/31
               </Typography>
               <Typography variant="subtitle1" paragraph>
-                {post.description}
+                desc
               </Typography>
               <Typography variant="subtitle1" color="primary">
                 Continue reading...
@@ -46,7 +46,7 @@ export default function FeaturedPost(props) {
             </CardContent>
           </div>
           <Hidden xsDown>
-            <CardMedia className={classes.cardMedia} image={post.image} title={post.imageTitle} />
+            <CardMedia className={classes.cardMedia} image={ 'url(https://source.unsplash.com/random)' } title={`title`} />
           </Hidden>
         </Card>
       </CardActionArea>
@@ -54,6 +54,8 @@ export default function FeaturedPost(props) {
   );
 }
 
-FeaturedPost.propTypes = {
+FeaturedCardParts.propTypes = {
   post: PropTypes.object,
 };
+
+export default FeatuerdCardParts;
