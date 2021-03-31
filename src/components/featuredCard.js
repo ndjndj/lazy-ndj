@@ -37,8 +37,31 @@ const useStyles = makeStyles(
     })
 );
 
-const FeatuerdCard = () => {
+const FeatuerdCard = (props) => {
+    const classes = useStyles();
+    const { post } = props;
 
+    return (
+      <Paper className={classes.mainFeaturedPost} style={{ backgroundImage: `url(https://source.unsplash.com/random)` }}>
+        {<img style={{ display: 'none' }} src={'url(https://source.unsplash.com/random)'} alt="test" />}
+        <div className={classes.overlay} />
+        <Grid container>
+          <Grid item md={6}>
+            <div className={classes.mainFeaturedPostContent}>
+              <Typography component="h1" variant="h3" color="inherit" gutterBottom>
+                title
+              </Typography>
+              <Typography variant="h5" color="inherit" paragraph>
+                post.description
+              </Typography>
+              <Link variant="subtitle1" href="#">
+                post.linkText
+              </Link>
+            </div>
+          </Grid>
+        </Grid>
+      </Paper>
+    );
 }
 
 FeatuerdCard.propTypes = {
