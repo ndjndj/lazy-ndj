@@ -15,7 +15,21 @@ const useStyles = makeStyles(
 );
 
 const Main = () => {
+    <Grid item xs={12} md={8}>
+        <Typography variant="h6" gutterBottom>
+            Title
+        </Typography>
+        <Divider />
+        <p>posts</p>
+        <p>posts</p>
+        <p>posts</p>
+        <p>posts</p>
+    </Grid>
+}
 
+Main.PropTypes = {
+    posts: PropTypes.array,
+    title: PropTypes.string,
 }
 
 export default Main;
