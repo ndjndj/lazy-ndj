@@ -1,6 +1,6 @@
 import React from 'react';
 import { makeStyles, AppBar, Toolbar, List, ListItem, ListItemText, Container, IconButton, Typography } from '@material-ui/core';
-import { Router, Link } from '@reach/router';
+import { Link } from 'gatsby';
 import IconRay from '../assets/ray-32.svg';
 
 
