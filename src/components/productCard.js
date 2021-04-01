@@ -15,7 +15,7 @@ const useStyles = makeStyles({
   },
 });
 
-export default function ActionAreaCard() {
+const productCard = () => {
   const classes = useStyles();
 
   return (
@@ -39,3 +39,5 @@ export default function ActionAreaCard() {
     </Card>
   );
 }
+
+export default productCard;
