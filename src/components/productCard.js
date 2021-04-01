@@ -23,7 +23,7 @@ const productCard = () => {
       <CardActionArea>
         <CardMedia
           className={classes.media}
-          image="/static/images/cards/contemplative-reptile.jpg"
+          image="../assets/ray-64.svg"
           title="Contemplative Reptile"
         />
         <CardContent>
