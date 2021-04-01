@@ -9,6 +9,7 @@ import { CardActionArea } from '@material-ui/core';
 const useStyles = makeStyles({
   root: {
     maxWidth: 345,
+    padding: `8px`,
   },
   media: {
     height: 140,
