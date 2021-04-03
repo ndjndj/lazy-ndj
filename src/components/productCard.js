@@ -24,7 +24,7 @@ const ProductCard = () => {
       <CardActionArea>
         <CardMedia
           className={classes.media}
-          image="../assets/ray-64.svg"
+          image="../../static/ray.jpg"
           title="Contemplative Reptile"
         />
         <CardContent>
