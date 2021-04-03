@@ -3,7 +3,7 @@ import Header from '../components/header';
 import ProductCard from '../components/productCard';
 import Sidebar from '../components/sidebar';
 
-export default function Products() {
+const Products = () => {
   return (
     <React.Fragment>
       <Header />
@@ -14,3 +14,5 @@ export default function Products() {
     </React.Fragment>
   );
 }
+
+export default Products;
