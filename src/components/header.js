@@ -42,7 +42,7 @@ const Header = () => {
         <AppBar position="static">
             <Toolbar className={classes.toolbar}>
                 <Container className={classes.navDisplayFlex}>
-                    <IconButton edge="start" color="inherit" aria-label="home">
+                    <IconButton edge="start" color="inherit" aria-label="home" component={Link} to="/">
                         <IconRay />
                         <Typography variant="h6">lazyRay</Typography>
                     </IconButton>
