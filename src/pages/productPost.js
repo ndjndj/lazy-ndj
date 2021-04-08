@@ -6,6 +6,8 @@ const ProductPost = () => {
   return (
     <React.Fragment>
       <Header />
+      <h1>Pcikles</h1>
+      <p>Chrome 拡張機能です</p>
       <Sidebar />
     </React.Fragment>
   );
