@@ -13,7 +13,7 @@ export default function Home() {
       <About path="/about" />
       <Blog path="/blog" />
       <Contact path="/contact" />
-      <ProductPost path="/products/products" />
+      <ProductPost path="/products/product" />
       <Products path="/products" />
       <About path="/" />
     </Router>

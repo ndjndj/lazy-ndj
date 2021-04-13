@@ -21,7 +21,7 @@ const ProductCard = () => {
   const classes = useStyles();
 
   return (
-    <Link to="/product">
+    <Link to="/products/product">
       <Card className={classes.root}>
         <CardActionArea>
           <CardMedia
