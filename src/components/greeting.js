@@ -3,9 +3,10 @@ import React from "react"
 const Greeting = () => {
   return (
     <React.Fragment>
-      <Header />
-      <Form />
-      <Sidebar />
+            <h1>
+        ndj
+      </h1>
+      <p>はじめまして、ndjです</p>
     </React.Fragment>
   );
 }
