@@ -1,8 +1,8 @@
 import React from "react"
-import { calcDiffYear } from '../common/common';
+import { calcDiffYear, BIRTHDAY } from '../common/common';
 
 const Greeting = () => {
-  const age = String(calcDiffYear(new Date('1994/06/17 02:03:00'), new Date()));
+  const age = String(calcDiffYear(BIRTHDAY, new Date()));
   return (
     <React.Fragment>
             <h1>
