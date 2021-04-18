@@ -3,7 +3,9 @@ import React from "react"
 const Greeting = () => {
   const birth = new Date('1994/06/17 02:03:00');
   const now = new Date();
-  const diff = Math.floor((now.getTime() -birth.getTime()) / (1000 * 60 * 60 * 24) / 365.25);
+  const dayMilliSec = 1000 * 60 * 60 * 24;
+  const year = 365.25; // うるう年を考慮
+  const diff = Math.floor((now.getTime() -birth.getTime()) / (dayMilliSec) / year);
 
   return (
     <React.Fragment>
