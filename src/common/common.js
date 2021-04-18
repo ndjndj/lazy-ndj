@@ -1,4 +1,5 @@
 
+export const BIRTHDAY = new Date('1994/06/17 02:03:00');
 
 export const calcDiffYear = (fromTime, toTime) => {
     const dayMilliSec = 1000 * 60 * 60 * 24; //一日の秒数
