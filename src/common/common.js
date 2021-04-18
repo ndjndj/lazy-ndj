@@ -6,3 +6,7 @@ export const calcYear = (milliSec) => {
 
     return Math.floor((milliSec) / (dayMilliSec) / year);
 }
+
+export const calcDateDiffMilliSec = (fromTime, toTime) => {
+    return fromTime.getTime() - toTime.getTime();
+}
