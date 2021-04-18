@@ -1,12 +1,8 @@
 import React from "react"
+import { calcDiffYear } from '../common/common';
 
 const Greeting = () => {
-  const birth = new Date('1994/06/17 02:03:00');
-  const now = new Date();
-  const dayMilliSec = 1000 * 60 * 60 * 24;
-  const year = 365.25; // うるう年を考慮
-  const diff = Math.floor((now.getTime() -birth.getTime()) / (dayMilliSec) / year);
-
+  const age = String(calcDiffYear(new Date('1994/06/17 02:03:00'), new Date()));
   return (
     <React.Fragment>
             <h1>
@@ -14,7 +10,7 @@ const Greeting = () => {
       </h1>
       <p>はじめまして、ndjです</p>
 
-      <p>1994年生まれの{diff}歳です。</p>
+      <p>1994年生まれの{age}歳です。</p>
     </React.Fragment>
   );
 }
