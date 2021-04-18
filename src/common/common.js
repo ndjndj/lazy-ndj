@@ -1,14 +1,8 @@
 
 
-export const calcMilliSecToYear = (milliSec) => {
+export const calcDiffYear = (fromTime, toTime) => {
     const dayMilliSec = 1000 * 60 * 60 * 24; //一日の秒数
     const year = 365.25; // うるう年を考慮
-
-    return Math.floor((milliSec) / (dayMilliSec) / year);
+    const diff = fromTime.getTime() - toTime.getTime();
+    return Math.floor((diff) / (dayMilliSec) / year);
 }
-
-export const calcDateDiffMilliSec = (fromTime, toTime) => {
-    return fromTime.getTime() - toTime.getTime();
-}
-
-export const calc
