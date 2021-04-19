@@ -17,6 +17,18 @@ module.exports = {
           include: /assets/,
         }
       }
-    }
+    },
+    {
+      resolve: `gatsby-source-microcms`,
+      options: {
+        apiKey: process.env.API_KEY,
+        serviceId: process.env.SERVICE_ID,
+        apis: [
+          {
+            endpoint: `fixed-page`,
+          },
+        ],
+      },
+    },
   ],
 }
