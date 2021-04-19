@@ -1,18 +1,35 @@
-import React from "react"
-import { calcDiffYear, BIRTHDAY } from '../common/common';
+import React from 'react';
+import { useStaticQuery, graphql } from 'gatsby';
 
 const Greeting = () => {
-  const age = String(calcDiffYear(BIRTHDAY, new Date()));
-  return (
-    <React.Fragment>
-            <h1>
-        ndj
-      </h1>
-      <p>はじめまして、ndjです</p>
+  const { allMicrocmsFixedPage } = useStaticQuery(
+    graphql`
+      query {
+        allMicrocmsFixedPage(filter: {type: {eq: "about"}}) {
+          edges {
+            node {
+              id
+              type
+              date
+              content
+            }
+          }
+        }
+      }
+    `
+  );
 
-      <p>1994年生まれの{age}歳です。</p>
-    </React.Fragment>
+  const about = allMicrocmsFixedPage.edges[0].node;
+  const content = about.content;
+
+  return (
+      <div
+        dangerouslySetInnerHTML={{
+          __html: `${content}`
+        }}
+      ></div>
   );
 }
+
 
 export default Greeting;
