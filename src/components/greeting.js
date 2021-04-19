@@ -23,13 +23,11 @@ const Greeting = () => {
   const content = about.content;
 
   return (
-    <React.Fragment>
       <div
         dangerouslySetInnerHTML={{
           __html: `${content}`
         }}
       ></div>
-    </React.Fragment>
   );
 }
 
