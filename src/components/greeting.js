@@ -1,8 +1,9 @@
 import React from 'react';
-import { graphql } from 'gatsby';
+import { useStaticQuery, graphql } from 'gatsby';
 
-const Greeting = ({}) => {
-  //let api =
+const Greeting = ({ data }) => {
+  let api = data;
+  console.log(api);
   return (
     <React.Fragment>
 
