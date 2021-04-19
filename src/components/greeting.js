@@ -1,7 +1,8 @@
-import React from "react"
+import React from 'react';
+import { graphql } from 'gatsby';
 
-const Greeting = () => {
-
+const Greeting = ({}) => {
+  //let api =
   return (
     <React.Fragment>
 
@@ -9,5 +10,19 @@ const Greeting = () => {
   );
 }
 
+export const query = graphql`
+query {
+  allMicrocmsFixedPage(filter: {type: {eq: "about"}}) {
+    edges {
+      node {
+        id
+        type
+        date
+        content
+      }
+    }
+  }
+}
+`;
 
 export default Greeting;
