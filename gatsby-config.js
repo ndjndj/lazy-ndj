@@ -1,8 +1,8 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.com/docs/gatsby-config/
- */
+const path = require('path');
+
+require('dotenv').config({
+  path: `.env.${process.env_NODE_ENV}`
+});
 
 module.exports = {
   /* Your site config here */
