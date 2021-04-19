@@ -21,10 +21,14 @@ const Greeting = () => {
 
   const about = allMicrocmsFixedPage.edges[0].node;
   const content = about.content;
-  
+
   return (
     <React.Fragment>
-      { content }
+      <div
+        dangerouslySetInnerHTML={{
+          __html: `${content}`
+        }}
+      ></div>
     </React.Fragment>
   );
 }
