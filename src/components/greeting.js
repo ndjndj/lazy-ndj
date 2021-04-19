@@ -2,7 +2,7 @@ import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 
 const Greeting = () => {
-  const data = useStaticQuery(
+  const { allMicrocmsFixedPage } = useStaticQuery(
     graphql`
       query {
         allMicrocmsFixedPage(filter: {type: {eq: "about"}}) {
@@ -18,10 +18,13 @@ const Greeting = () => {
       }
     `
   );
-  console.log(data);
+
+  const about = allMicrocmsFixedPage.edges[0].node;
+  const content = about.content;
+  
   return (
     <React.Fragment>
-
+      { content }
     </React.Fragment>
   );
 }
