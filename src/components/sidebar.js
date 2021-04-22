@@ -5,6 +5,7 @@ import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import Link from '@material-ui/core/Link';
+import AboutCard from '../components/aboutCard';
 
 const useStyles = makeStyles((theme) => ({
   sidebarAboutBox: {
@@ -22,12 +23,7 @@ const Sidebar = (props) => {
 
   return (
     <Grid item xs={12} md={4}>
-      <Paper elevation={0} className={classes.sidebarAboutBox}>
-        <Typography variant="h6" gutterBottom>
-          title
-        </Typography>
-        <Typography>description</Typography>
-      </Paper>
+        <AboutCard />
       <Typography variant="h6" gutterBottom className={classes.sidebarSection}>
         Archives
       </Typography>
@@ -39,7 +35,7 @@ const Sidebar = (props) => {
         <Link display="block" variant="body1" href="#">
           <Grid container direction="row" spacing={1} alignItems="center">
             <Grid item>
-              
+
             </Grid>
             <Grid item>name</Grid>
           </Grid>
