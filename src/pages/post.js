@@ -6,7 +6,7 @@ const Post = () => {
   return (
     <React.Fragment>
       <Header />
-
+      <div>ブログの内容</div>
       <Sidebar />
     </React.Fragment>
   );
