@@ -6,6 +6,7 @@ const Post = () => {
   return (
     <React.Fragment>
       <Header />
+
       <Sidebar />
     </React.Fragment>
   );
